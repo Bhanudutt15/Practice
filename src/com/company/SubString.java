@@ -7,15 +7,12 @@ public class SubString {
 
     public static void main(String args[]){
 
-        String s = "A";
+        String s = "AA";
         String sub = "";
         int max = 0;
         int len = 0;
         String out = "";
-
         Set<Character> set = new HashSet<Character>();
-
-
         for(int i=0;i<s.length();i++){
             sub = String.valueOf(s.charAt(i));
            if(s.length()<=1){
@@ -31,15 +28,12 @@ public class SubString {
                     len=sub.length();
                 }
                 else {
-                    System.out.println(sub);
-                   // len = sub.length();
                     break;
                 }
             }
                     if(len>max){
                         max= len;
                         out=sub;
-
                     }
                 }
         System.out.println(out);
