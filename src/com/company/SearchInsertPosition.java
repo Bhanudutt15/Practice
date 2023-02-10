@@ -3,7 +3,7 @@ package com.company;
 public class SearchInsertPosition {
 
     public static void main(String args[]){
-        int [] nums = {1,3,4,5,6};
+        int [] nums = {1,3,4,5,6,8};
         int target = 6;
         int low =0;
         int count =0;
