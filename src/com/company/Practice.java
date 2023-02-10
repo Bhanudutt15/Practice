@@ -1,27 +1,29 @@
 package com.company;
 
+import java.math.BigInteger;
 import java.util.*;
 
 public class Practice {
 
-    public static void main(String args[]){
+   public static void main(String args[]){
 
-        List<String> listArray = new ArrayList<String>();
-        listArray.add("Hello");
-        listArray.add("World");
+      int [] digits = {9,9};
 
-        Map<String, Integer> map = new HashMap<>();
-        map.put("a", 1);
-        map.put("b", 2);
+      for(int i=digits.length-1;i>=0;i--) {
 
-        System.out.println(Arrays.asList(map));
+         if (digits[i] < 9) {
+            digits[i]++;
+          break;
+         }
+         digits[i] = 0;
+      }
+      digits = new int[digits.length+1];
+      digits[0]=1;
+      System.out.println(Arrays.toString(digits));
 
-        for(Map.Entry<String,Integer> entry : map.entrySet()){
 
-            System.out.println(entry.getKey() + " value is " + entry.getValue());
 
-        }
 
-    //    System.out.println(listArray);
-    }
+   }
+
 }
